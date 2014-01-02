@@ -3,3 +3,5 @@
 /.lein-failures
 /target
 /target
+pom.xml
+pom.xml.asc
