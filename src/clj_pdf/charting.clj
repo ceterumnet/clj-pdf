@@ -26,11 +26,11 @@
       (.. chart getCategoryPlot getRenderer (setBarPainter (new StandardBarPainter)))
       chart)))
 
-(defn- pie-chart [{title :title} & data]
+(defn- pie-chart [{title :title tooltips :tooltips} & data]
   (let [dataset (new DefaultPieDataset)]
     (doseq [[name value] data]
       (.setValue dataset name (double value)))
-    (ChartFactory/createPieChart title dataset true true false)))
+    (ChartFactory/createPieChart title dataset true tooltips false)))
 
 
 (defn- line-chart [{title           :title
