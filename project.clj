@@ -1,4 +1,4 @@
-(defproject clj-pdf
+(defproject ceterumnet-clj-pdf
   "1.11.14"
   :description "PDF generation library (ceterumnet)"
   :url "https://github.com/ceterumnet/clj-pdf"
