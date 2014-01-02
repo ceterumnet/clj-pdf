@@ -1,5 +1,5 @@
 (defproject ceterumnet-clj-pdf
-  "1.11.14"
+  "1.11.15"
   :description "PDF generation library (ceterumnet)"
   :url "https://github.com/ceterumnet/clj-pdf"
   :license {:name "GNU Lesser General Public License - v 3"

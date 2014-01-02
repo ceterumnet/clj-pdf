@@ -30,8 +30,10 @@
   (let [dataset (new DefaultPieDataset)]
     (doseq [[name value] data]
       (.setValue dataset name (double value)))
-    (ChartFactory/createPieChart title dataset true tooltips false)))
-
+    (let [chart-plot (ChartFactory/createPieChart title dataset true true false)]
+      (if-not tooltips
+        (.setLabelGenerator (.getPlot chart-plot) nil))
+      chart-plot)))
 
 (defn- line-chart [{title           :title
                     points?         :show-points
